@@ -1,0 +1,18 @@
+Total Tests: 11, Passed Tests: 6, Failed Tests: 5, Average Duration: 1432.73ms
+
+Files Summary:
+shippingAddresses.test.js: Total: 11, Passed: 6, Failed: 5, Average Duration: 1432.73ms
+
+Test Results:
+File,Test,Duration,Status
+shippingAddresses.test.js,ShippingAddress E2E tests GET /shippingaddresses should return 401 if not logged in,9,passed
+shippingAddresses.test.js,ShippingAddress E2E tests GET /shippingaddresses should return 200 and array of shipping addresses for logged in customer,11,passed
+shippingAddresses.test.js,ShippingAddress E2E tests POST /shippingaddresses should return 401 if not logged in,7,passed
+shippingAddresses.test.js,ShippingAddress E2E tests POST /shippingaddresses should return 422 if required fields are missing,13,passed
+shippingAddresses.test.js,ShippingAddress E2E tests POST /shippingaddresses should create a new shipping address when valid data is provided,13432,failed
+shippingAddresses.test.js,ShippingAddress E2E tests POST /shippingaddresses should set isDefault to true when it is the first address of the user,2235,failed
+shippingAddresses.test.js,ShippingAddress E2E tests PATCH /shippingaddresses/:shippingAddressId/default should return 401 if not logged in,8,passed
+shippingAddresses.test.js,ShippingAddress E2E tests PATCH /shippingaddresses/:shippingAddressId/default should return 403 if another customer tries to mark it default,15,failed
+shippingAddresses.test.js,ShippingAddress E2E tests PATCH /shippingaddresses/:shippingAddressId/default should mark shipping address as default for the customer,12,failed
+shippingAddresses.test.js,ShippingAddress E2E tests DELETE /shippingaddresses/:shippingAddressId should return 401 if not logged in,8,passed
+shippingAddresses.test.js,ShippingAddress E2E tests DELETE /shippingaddresses/:shippingAddressId should return 403 if another customer tries to delete it,10,failed
